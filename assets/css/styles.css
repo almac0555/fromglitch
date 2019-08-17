@@ -1,0 +1,75 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400";
+@import "https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, .wrapper {
+  height: 100%;
+}
+
+body {
+  background: #046B99;
+}
+
+.wrapper {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  text-align: center;
+  visibility: hidden;
+  user-select: none;
+}
+
+.setting {
+  margin-top: 60px;
+}
+
+.setting__location {
+  font-size: 4.25rem;
+}
+
+.setting__last-updated {
+  margin-top: 15px;
+  font-size: 1rem;
+  opacity: .75;
+}
+
+.setting__date {
+  margin-top: 15px;
+  font-size: 3rem;
+  opacity: .75;
+}
+
+.status__icon {
+  font-size: 15rem;
+  margin: 15px;
+}
+
+.status__text {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.stats__temp {
+  font-size: 6rem;
+  font-weight: 100;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+
+.stats__other {
+  display: grid;
+  grid-template-rows: repeat(3, 33px);
+  grid-template-columns: 40px 100px;
+  text-align: left;
+}
